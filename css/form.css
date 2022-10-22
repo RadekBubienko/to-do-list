@@ -8,3 +8,6 @@
 .form__field:required {
     border-color: #777;
 }
+.list__item--lineThrough {
+    text-decoration-line: line-through;
+}
