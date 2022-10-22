@@ -1,0 +1,10 @@
+.form__field {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+.form__field:required {
+    border-color: #777;
+}
