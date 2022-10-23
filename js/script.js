@@ -10,6 +10,11 @@
     render();
   };
 
+  const cleanItem = () => {
+    document.querySelector(".js-newTask").value = ""; 
+
+  };
+
   const removeTask = (taskIndex) => {
     tasks.splice(taskIndex, 1);
     render();
@@ -43,10 +48,10 @@
 
     for (const task of tasks) {
       htmlString += `
-              <li${task.done ? ' class="list__item--lineThrough"' : ''}>
-                <button class="js-done">zrobione?</button>
-                ${task.content}
-                <button class="js-remove">usuń</button>
+              <li class="list__item">
+                <button class="button__done js-done">${task.done ? "✓" : ""}</button>
+                <p class="${task.done ? "list__item--lineThrough" : ""}">${task.content}</p>
+                <button class="button__remove js-remove">🗑️</button>
               </li>  
             `;
     }
@@ -66,8 +71,10 @@
     }
 
     addNewTask(newTaskContent);
-  };
+    cleanItem();
 
+    };
+   
   const init = () => {
     render();
 

@@ -10,7 +10,27 @@ html {
 }
 
 .body {
-    background-color: #ebf3f8;
-    margin: 0;
+    background-color: #ededed;
+    margin: auto;
     color: #292929;
+    max-width: 700px;
+
+}
+
+@media (max-width: 767px) {
+    .body {
+        max-width: 90%;
+    }
+}
+
+.header {
+    color: #3c3c3c;
+    padding: 15px 0;
+
+}
+.subHeader {
+    color: #3c3c3c;
+    padding: 15px;
+    border-bottom: 2px solid lightgrey;
+    margin: 0;
 }

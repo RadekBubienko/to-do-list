@@ -21,15 +21,21 @@
 </head>
 
 <body class="body">
-  <main class="container">
-    <h1>Sprawy do załatwienia</h1>
-    <form class="form js-form">
-      <input class="form__field js-newTask">
-      <button class="form__button js-button">Dodaj zadanie</button>
-    </form>
+  <h1 class="header">Sprawy do załatwienia</h1>
 
-    <ul class="list js-tasks"></ul>
+  <main class="container">
+    <h2 class="subHeader">Dodaj nową sprawę do załatwienia</h2>
+    <form class="form js-form">
+      <input class="form__input js-newTask" placeholder="Do zrobienia!">
+      <button type="submit" class="form__button js-button">Dodaj zadanie</button>
+    </form>
   </main>
+  
+  <section class="container">
+    <h2 class="subHeader"> Lista zadań</h2>
+    <ul class="list js-tasks"></ul>
+  </section>
+
 </body>
 
 </html>
