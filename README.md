@@ -1,5 +1,6 @@
 # To do list
 
+## Preview
 ![Screen Shoot](images/screenShoot.png)
 
 ## Description
