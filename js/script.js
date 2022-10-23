@@ -1,18 +1,16 @@
 {
-  const tasks = [
-
-  ];
+  const tasks = [];
 
   const addNewTask = (newTaskContent) => {
     tasks.push({
       content: newTaskContent,
     });
+
     render();
   };
 
   const cleanItem = () => {
     document.querySelector(".js-newTask").value = ""; 
-
   };
 
   const removeTask = (taskIndex) => {
@@ -53,7 +51,7 @@
                 <p class="${task.done ? "list__item--lineThrough" : ""}">${task.content}</p>
                 <button class="button__remove js-remove">🗑️</button>
               </li>  
-            `;
+      `;
     }
 
     document.querySelector(".js-tasks").innerHTML = htmlString;
@@ -72,7 +70,6 @@
 
     addNewTask(newTaskContent);
     cleanItem();
-
     };
    
   const init = () => {
@@ -81,7 +78,6 @@
     const form = document.querySelector(".js-form");
 
     form.addEventListener("submit", onFormSubmit);
-
   };
 
   init();

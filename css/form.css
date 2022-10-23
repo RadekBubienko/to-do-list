@@ -1,7 +1,20 @@
+.form {
+    padding: 25px 15px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 15px;
+}
+
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
 .form__button {
     padding: 10px 5px;
-    color: white;
-    background-color: teal;
+    color: #ffffff;
+    background-color: #008080;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -11,18 +24,13 @@
     outline: auto;
 }
 
-.form {
-    padding: 25px 15px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-gap: 15px;
-}
 .list {
     padding: 15px;
     list-style-type: none;
 }
+
 .list__item {
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid #d3d3d3;
     padding-bottom: 5px;
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -30,46 +38,39 @@
     grid-gap: 20px;
 }
 
-@media (max-width: 767px) {
-    .form {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
 .form__input:focus {
-    border: 1px solid black;
+    border: 1px solid #000000;
     border-radius: 2px;
 }
 
 .form__input {
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     padding: 10px;
     width: 100%;
     border-radius: 5px;
 }
+
 .list__item--lineThrough {
     text-decoration-line: line-through;
 }
+
 .button__done {
-    color: white;
-    background-color: green;
+    color: #ffffff;
+    background-color: #008000;
     margin: 5px;
     padding: 0px;
     width: 30px;
     height: 30px;
     border: none;
     cursor: pointer;
-    
 }
+
 .button__remove {
-    background-color: red;
+    background-color: #ff0000;
     margin: 5px;
     padding: 0px;
     width: 30px;
     height: 30px;
     border: none;
     cursor: pointer;
-    
 }
