@@ -1,8 +1,9 @@
 html {
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    word-break: break-all;
 }
 
 *, ::after, ::before {
@@ -10,7 +11,7 @@ html {
 }
 
 .body {
-    background-color: #ededed;
+    background-color: #eee;
     margin: auto;
     color: #292929;
     max-width: 700px;
@@ -29,8 +30,9 @@ html {
 }
 
 .subHeader {
+    font-size: 20px;
     color: #3c3c3c;
-    padding: 15px;
-    border-bottom: 2px solid #d3d3d3;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
     margin: 0;
 }

@@ -1,8 +1,8 @@
 .form {
-    padding: 25px 15px;
+    padding: 20px;
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 15px;
+    grid-gap: 20px;
 }
 
 @media (max-width: 767px) {
@@ -12,30 +12,34 @@
 }
 
 .form__button {
-    padding: 10px 5px;
+    padding: 10px;
     color: #ffffff;
     background-color: #008080;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 .form__button:active {
     outline: auto;
 }
 
+.form__button:hover {
+    background-color: #008080dd;
+}
+
 .list {
-    padding: 15px;
+    padding: 20px;
+    margin: 0;
     list-style-type: none;
 }
 
 .list__item {
-    border-bottom: 1px solid #d3d3d3;
+    border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
 .form__input:focus {
@@ -44,10 +48,8 @@
 }
 
 .form__input {
-    border: 1px solid #cccccc;
+    border: 1px solid #ddd;
     padding: 10px;
-    width: 100%;
-    border-radius: 5px;
 }
 
 .list__item--lineThrough {
@@ -65,7 +67,12 @@
     cursor: pointer;
 }
 
+.button__done:hover {
+    background-color: #008000cc;
+}
+
 .button__remove {
+    color: #ffffff;
     background-color: #ff0000;
     margin: 5px;
     padding: 0px;
@@ -73,4 +80,8 @@
     height: 30px;
     border: none;
     cursor: pointer;
+}
+
+.button__remove:hover {
+    background-color: #ff0000cc;
 }

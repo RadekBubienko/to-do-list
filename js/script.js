@@ -10,7 +10,8 @@
   };
 
   const cleanItem = () => {
-    document.querySelector(".js-newTask").value = ""; 
+    document.querySelector(".js-newTask").value = "";
+    document.querySelector(".js-newTask").focus();
   };
 
   const removeTask = (taskIndex) => {
@@ -63,6 +64,7 @@
     event.preventDefault();
 
     const newTaskContent = document.querySelector(".js-newTask").value.trim();
+    
 
     if (newTaskContent === "") {
       return;
