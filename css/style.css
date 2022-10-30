@@ -3,7 +3,6 @@ html {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    word-break: break-all;
 }
 
 *, ::after, ::before {
@@ -32,7 +31,5 @@ html {
 .subHeader {
     font-size: 20px;
     color: #3c3c3c;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
     margin: 0;
 }

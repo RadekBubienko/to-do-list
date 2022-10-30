@@ -17,7 +17,7 @@
     background-color: #008080;
     border: none;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 .form__button:active {
@@ -26,7 +26,7 @@
 
 .form__button:hover {
     background-color: #008080dd;
-    transform: scale(1.08);
+    transform: scale(1.1);
 }
 
 .list {
@@ -42,6 +42,10 @@
     grid-template-columns: auto 1fr auto;
     align-items: center;
     grid-gap: 10px;
+}
+
+.list__item--hidden {
+    display: none;
 }
 
 .form__input:focus {
@@ -67,7 +71,7 @@
     height: 30px;
     border: none;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 .button__done:hover {
@@ -83,7 +87,7 @@
     height: 30px;
     border: none;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 .button__remove:hover {
